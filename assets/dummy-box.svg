@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="boxBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065f46" />
+      <stop offset="50%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <linearGradient id="spineBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#022c22" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="15" dy="25" stdDeviation="20" flood-color="#011c16" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- 3D Box Shadow -->
+  <ellipse cx="320" cy="700" rx="220" ry="30" fill="#01140e" opacity="0.6" filter="blur(15px)" />
+
+  <!-- 3D Box Spine (Sisi Buku / Box Kiri) -->
+  <polygon points="120,130 190,80 190,620 120,660" fill="url(#spineBg)" stroke="#059669" stroke-width="1.5" />
+  
+  <!-- Teks Vertikal di Punggung Box -->
+  <g transform="translate(155, 380) rotate(-90)">
+    <text text-anchor="middle" fill="#a7f3d0" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20" letter-spacing="4">
+      TAHSIN QARA'NA
+    </text>
+  </g>
+
+  <!-- 3D Box Front Face (Muka Depan Box) -->
+  <polygon points="190,80 500,120 500,660 190,620" fill="url(#boxBg)" stroke="#10b981" stroke-width="2" filter="url(#shadow)" />
+
+  <!-- Ornamen Garis & Desain Box Depan -->
+  <polygon points="205,100 485,135 485,645 205,608" fill="none" stroke="#34d399" stroke-width="1" stroke-dasharray="6,4" opacity="0.4" />
+
+  <!-- Logo Lingkaran Arab -->
+  <circle cx="345" cy="270" r="75" fill="#ffffff" stroke="url(#goldGrad)" stroke-width="4" />
+  <circle cx="345" cy="270" r="68" fill="#047857" />
+  <text x="345" y="295" text-anchor="middle" fill="#fef3c7" font-family="'Amiri', serif" font-weight="bold" font-size="52">
+    قَرَأْنَا
+  </text>
+
+  <!-- Judul Utama Box -->
+  <text x="345" y="400" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="34" letter-spacing="1">
+    TAHSIN
+  </text>
+  <text x="345" y="440" text-anchor="middle" fill="url(#goldGrad)" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="32" letter-spacing="2">
+    QARA'NA
+  </text>
+
+  <!-- Subtitle Box -->
+  <text x="345" y="475" text-anchor="middle" fill="#e2e8f0" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14">
+    Melatih Lisan Memperbaiki
+  </text>
+  <text x="345" y="495" text-anchor="middle" fill="#e2e8f0" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14">
+    Bacaan Al-Qur'an
+  </text>
+
+  <!-- Badge Rasm Utsmani -->
+  <rect x="255" y="525" width="180" height="28" rx="14" fill="#022c22" stroke="#10b981" stroke-width="1.5" />
+  <text x="345" y="544" text-anchor="middle" fill="#6ee7b7" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11">
+    Rasm Utsmani Standar
+  </text>
+
+  <!-- Badge Interactive Flipbook -->
+  <g transform="translate(345, 595)">
+    <text text-anchor="middle" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" letter-spacing="1">
+      📱 INTERACTIVE FLIPBOOK APP
+    </text>
+  </g>
+
+  <!-- Keterangan Dummy Replacement Note di Bawah -->
+  <rect x="70" y="695" width="460" height="36" rx="10" fill="#0f172a" stroke="#fbbf24" stroke-width="1.5" opacity="0.95" />
+  <text x="300" y="718" text-anchor="middle" fill="#fcd34d" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12">
+    💡 DUMMY BOX: Ganti file ini dengan file JPG / PNG Anda sendiri
+  </text>
+</svg>
